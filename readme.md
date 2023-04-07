@@ -23,6 +23,7 @@ The same as [MMEditing](https://mmediting.readthedocs.io/en/latest/install.html)
 conda create -n clipiqa python=3.6
 pip install torch==1.8.1+cu101 torchvision==0.9.1+cu101 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html # For CUDA 10.1
 pip install -r requirements.txt
+mim install mmcv-full==1.5.0
 pip install -v -e .
 ```
 

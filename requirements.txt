@@ -2,7 +2,8 @@
 -r requirements/tests.txt
 tqdm
 ftfy
-pillow==6.1
+pillow
 regex
 einops
 pandas
+plotly

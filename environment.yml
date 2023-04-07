@@ -1,0 +1,43 @@
+name: shhqv
+channels:
+  - pytorch-lts
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pytorch
+  - torchvision
+  - cudatoolkit=11.1
+  - numpy==1.22.4
+  - pip
+  - pip:
+    - numpy==1.22.4
+    - openmim
+    - tqdm
+    - ftfy
+    - pillow
+    - regex
+    - einops
+    - pandas
+    - plotly
+    - lmdb
+    - openmim
+    - scikit-image
+    - tensorboard
+    - yapf
+    - codecov
+    - flake8
+    - interrogate
+    - isort
+    - onnxruntime
+    - pytest
+    - pytest-runner
+    - click
+    - pillow
+    - scipy
+    - matplotlib
+    - imageio-ffmpeg
+    - joblib
+    - distinctipy
+    - scenedetect
+    - pycocotools
