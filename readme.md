@@ -14,17 +14,26 @@ S-Lab, Nanyang Technological University
 <img src="https://user-images.githubusercontent.com/22350795/202890659-2b73008f-fc0d-49c6-8bc8-0c1f07df5d36.png" width="800px"/>
 
 ### TODO
-- [ ] Website release
+- [ ] Colab demo
+- [x] ~~MMEditing update~~
 - [x] ~~Code release~~
 
 ### Dependencies and Installation
-The same as [MMEditing](https://mmediting.readthedocs.io/en/latest/install.html), currently is using an old version.
+The same as [MMEditing](https://mmediting.readthedocs.io/en/latest/install.html), support the latest version 0.16.1.
 ```
-conda create -n clipiqa python=3.6
-pip install torch==1.8.1+cu101 torchvision==0.9.1+cu101 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html # For CUDA 10.1
-pip install -r requirements.txt
+# Create a conda environment and activate it
+conda create -n clipiqa python=3.8 -y
+conda activate clipiqa
+# Install PyTorch following official instructions, e.g.
+conda install pytorch=1.10 torchvision cudatoolkit=11.3 -c pytorch
+# Install pre-built MMCV using MIM.
+pip3 install openmim
 mim install mmcv-full==1.5.0
-pip install -v -e .
+# Install CLIP-IQA from the source code.
+git clone git@github.com:IceClear/CLIP-IQA.git
+cd CLIP-IQA
+pip install -r requirements.txt
+pip install -e .
 ```
 
 ### Running Examples

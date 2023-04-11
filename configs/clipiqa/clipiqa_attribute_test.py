@@ -7,31 +7,22 @@ model = dict(
         type='CLIPIQAFixed',
         backbone_name='RN50',
 
-        classnames=[
-            ['Good photo.', 'Bad photo.'],
-            ['Natural photo.', 'Synthetic photo.'],
-            ['Sharp photo.', 'Blurry photo.'],
-            ['Noisy photo.', 'Clean photo.'],
-            ['Vivid photo.', 'Dull photo.'],
-            ['Complex photo.', 'Simple photo.'],
-        ]),
-
         # test Koniq and liveiwt dataset
         # classnames=[
         #     ['Good photo.', 'Bad photo.'],
         # ]),
 
         # test degradation attributes
-        # classnames=[
-        #     ['Good photo.', 'Bad photo.'],
-        #     ['Bright photo.', 'Dark photo.'],
-        #     ['Sharp photo.', 'Blurry photo.'],
-        #     ['Noisy photo.', 'Clean photo.'],
-        #     ['Colorful photo.', 'Dull photo.'],
-        #     ['High contrast photo.', 'Low contrast photo.'],
-        # ]),
+        classnames=[
+            ['Good photo.', 'Bad photo.'],
+            ['Bright photo.', 'Dark photo.'],
+            ['Sharp photo.', 'Blurry photo.'],
+            ['Noisy photo.', 'Clean photo.'],
+            ['Colorful photo.', 'Dull photo.'],
+            ['High contrast photo.', 'Low contrast photo.'],
+        ]),
 
-        #test AVA attributes
+        # test AVA attributes
         # classnames=[
         #     ['Aesthetic photo.', 'Not aesthetic photo.'],
         #     ['Happy photo.', 'Sad photo.'],

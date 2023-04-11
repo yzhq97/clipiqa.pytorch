@@ -3,6 +3,7 @@ from .base_dataset import BaseDataset
 from .base_generation_dataset import BaseGenerationDataset
 from .base_matting_dataset import BaseMattingDataset
 from .base_sr_dataset import BaseSRDataset
+from .base_vfi_dataset import BaseVFIDataset
 from .builder import build_dataloader, build_dataset
 from .comp1k_dataset import AdobeComp1kDataset
 from .dataset_wrappers import RepeatDataset
@@ -24,6 +25,8 @@ from .sr_test_multiple_gt_dataset import SRTestMultipleGTDataset
 from .sr_vid4_dataset import SRVid4Dataset
 from .sr_vimeo90k_dataset import SRVimeo90KDataset
 from .sr_vimeo90k_multiple_gt_dataset import SRVimeo90KMultipleGTDataset
+from .vfi_vimeo90k_7frames_dataset import VFIVimeo90K7FramesDataset
+from .vfi_vimeo90k_dataset import VFIVimeo90KDataset
 from .iqa_koniq_dataset import IQAKoniqDataset, IQALIVEITWDataset, IQAAVADataset
 
 __all__ = [
@@ -35,5 +38,6 @@ __all__ = [
     'GenerationUnpairedDataset', 'SRVid4Dataset', 'SRFolderGTDataset',
     'SRREDSMultipleGTDataset', 'SRVimeo90KMultipleGTDataset',
     'SRTestMultipleGTDataset', 'SRFolderRefDataset', 'SRFacialLandmarkDataset',
-    'SRFolderMultipleGTDataset', 'SRFolderVideoDataset', 'IQAKoniqDataset', 'IQALIVEITWDataset'
+    'SRFolderMultipleGTDataset', 'SRFolderVideoDataset', 'BaseVFIDataset',
+    'VFIVimeo90KDataset', 'VFIVimeo90K7FramesDataset', 'IQAKoniqDataset', 'IQALIVEITWDataset'
 ]

@@ -46,7 +46,7 @@ def get_seg_results(seg_model, frames, device, edge_blur=16):
 
     return frames
 
-def analyze_video(model, seg_model, video_path, output_dir, attribute_list, n_samples=10, vis=False):
+def analyze_video(model, seg_model, video_path, output_dir, attribute_list, n_samples=20, vis=False):
 
     video = imageio.get_reader(video_path)
     meta = video.get_meta_data()
@@ -87,6 +87,7 @@ def analyze_video(model, seg_model, video_path, output_dir, attribute_list, n_sa
         fig.update_xaxes(tickfont_family="Arial Black")
         fig.write_image(os.path.join(output_dir, f"{os.path.basename(video_path)}.png"), engine="kaleido")
 
+    imageio.mimwrite(os.path.join(output_dir, f"{os.path.basename(video_path)}"), frames, quality=9, fps=4)
     np.save(os.path.join(output_dir, f"{os.path.basename(video_path)}.npy"), outputs)
 
 

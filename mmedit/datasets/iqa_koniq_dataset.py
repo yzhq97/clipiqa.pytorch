@@ -34,7 +34,6 @@ class IQAKoniqDataset(BaseSRDataset):
 
     def __getitem__(self, idx):
         """Get item at each call.
-
         Args:
             idx (int): Index for getting each item.
         """
@@ -65,7 +64,6 @@ class IQALIVEITWDataset(BaseSRDataset):
 
     def __getitem__(self, idx):
         """Get item at each call.
-
         Args:
             idx (int): Index for getting each item.
         """
@@ -100,7 +98,6 @@ class IQAAVADataset(BaseSRDataset):
 
     def __getitem__(self, idx):
         """Get item at each call.
-
         Args:
             idx (int): Index for getting each item.
         """

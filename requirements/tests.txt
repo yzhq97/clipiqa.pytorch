@@ -1,7 +1,8 @@
 codecov
 flake8
 interrogate
-isort
+isort==5.10.1
 onnxruntime
 pytest
 pytest-runner
+yapf
